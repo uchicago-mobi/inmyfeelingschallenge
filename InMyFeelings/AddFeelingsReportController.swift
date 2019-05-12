@@ -31,12 +31,12 @@ class AddFeelingsReportController: UIViewController {
             present(alert, animated: false, completion: nil)
             return
         }
-
-        sharedRepository.entries.append(FeelingsEntry(
+        let entry = FeelingsEntry(
             oneWord: oneWordText,
             description: descriptionText,
             date: Date())
-        )
+        sharedRepository.entries.append(entry)
+        sharedRepository.save(entry)
     }
     
 }
