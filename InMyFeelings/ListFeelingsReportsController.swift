@@ -22,7 +22,7 @@ class ListFeelingsReportsController: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.entries = sharedRepository.entries
+        self.entries = sharedRepository.getEntries()
         self.tableView.reloadData()
     }
     
