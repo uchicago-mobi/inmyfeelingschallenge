@@ -32,7 +32,7 @@ class AddFeelingsReportController: UIViewController {
             return
         }
 
-        sharedRepository.entries.append(FeelingsEntry(
+        sharedRepository.save(FeelingsEntry(
             oneWord: oneWordText,
             description: descriptionText,
             date: Date())
