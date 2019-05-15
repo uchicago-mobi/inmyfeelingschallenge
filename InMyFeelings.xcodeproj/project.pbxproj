@@ -17,7 +17,7 @@
 		76352152228761780000BC80 /* FeelingsEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76352151228761780000BC80 /* FeelingsEntry.swift */; };
 		76352154228765640000BC80 /* FeelingsEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76352153228765640000BC80 /* FeelingsEntryCell.swift */; };
 		7635215622877FD20000BC80 /* EntriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7635215522877FD20000BC80 /* EntriesRepository.swift */; };
-		76352159228A70D50000BC80 /* FeelingsEntry.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76352157228A70D50000BC80 /* FeelingsEntry.xcdatamodeld */; };
+		7635218B228BB7160000BC80 /* InMyFeelings.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76352189228BB7160000BC80 /* InMyFeelings.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,7 @@
 		76352151228761780000BC80 /* FeelingsEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingsEntry.swift; sourceTree = "<group>"; };
 		76352153228765640000BC80 /* FeelingsEntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingsEntryCell.swift; sourceTree = "<group>"; };
 		7635215522877FD20000BC80 /* EntriesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesRepository.swift; sourceTree = "<group>"; };
-		76352158228A70D50000BC80 /* FeelingsEntry.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FeelingsEntry.xcdatamodel; sourceTree = "<group>"; };
+		7635218A228BB7160000BC80 /* InMyFeelings.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InMyFeelings.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +90,10 @@
 				7635212F228755910000BC80 /* AppDelegate.swift */,
 				76352131228755910000BC80 /* AddFeelingsReportController.swift */,
 				7635215522877FD20000BC80 /* EntriesRepository.swift */,
-				76352157228A70D50000BC80 /* FeelingsEntry.xcdatamodeld */,
 				76352133228755910000BC80 /* ListFeelingsReportsController.swift */,
 				76352151228761780000BC80 /* FeelingsEntry.swift */,
 				76352135228755910000BC80 /* Main.storyboard */,
+				76352189228BB7160000BC80 /* InMyFeelings.xcdatamodeld */,
 				76352153228765640000BC80 /* FeelingsEntryCell.swift */,
 				76352138228755920000BC80 /* Assets.xcassets */,
 				7635213A228755920000BC80 /* LaunchScreen.storyboard */,
@@ -214,8 +214,8 @@
 			files = (
 				76352134228755910000BC80 /* ListFeelingsReportsController.swift in Sources */,
 				76352152228761780000BC80 /* FeelingsEntry.swift in Sources */,
+				7635218B228BB7160000BC80 /* InMyFeelings.xcdatamodeld in Sources */,
 				7635215622877FD20000BC80 /* EntriesRepository.swift in Sources */,
-				76352159228A70D50000BC80 /* FeelingsEntry.xcdatamodeld in Sources */,
 				76352130228755910000BC80 /* AppDelegate.swift in Sources */,
 				76352132228755910000BC80 /* AddFeelingsReportController.swift in Sources */,
 				76352154228765640000BC80 /* FeelingsEntryCell.swift in Sources */,
@@ -487,13 +487,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		76352157228A70D50000BC80 /* FeelingsEntry.xcdatamodeld */ = {
+		76352189228BB7160000BC80 /* InMyFeelings.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				76352158228A70D50000BC80 /* FeelingsEntry.xcdatamodel */,
+				7635218A228BB7160000BC80 /* InMyFeelings.xcdatamodel */,
 			);
-			currentVersion = 76352158228A70D50000BC80 /* FeelingsEntry.xcdatamodel */;
-			path = FeelingsEntry.xcdatamodeld;
+			currentVersion = 7635218A228BB7160000BC80 /* InMyFeelings.xcdatamodel */;
+			path = InMyFeelings.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
