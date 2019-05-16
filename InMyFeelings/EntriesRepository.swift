@@ -28,18 +28,26 @@ class EntriesRepository {
         
         var contents = try! String(contentsOf: fileURL)
         contents.append(userString)
-        try! contents.write(to: fileURL, atomically: true, encoding: String.Encoding.utf8)
+        try! contents.write(to: fileURL, atomically: true, encoding: .utf8)
     }
     
-    private func getEntries() -> [FeelingsEntry] {
+    func getEntries() -> [FeelingsEntry] {
         let fileContents = try! String(contentsOf: fileURL)
         let entriesAsJson = fileContents.components(separatedBy: "\n")
         entries = []
-        let decoder = JSONDecoder()
+        
         for entry in entriesAsJson {
-            let jsonData = entry.data(using: .utf8)!
-            let entry = try! decoder.decode(FeelingsEntry.self, from: jsonData)
-            entries.append(entry)
+            if let data = entry.data(using: String.Encoding.utf8) {
+                do {
+                    let dictionary = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+                    if let dictionarizedFeelingsEntry = dictionary {
+                        let modelEntry = FeelingsEntry(fromDict: dictionarizedFeelingsEntry)
+                        entries.append(modelEntry)
+                    }
+                } catch let error as NSError {
+                    print(error)
+                }
+            }
         }
         return entries
     }
